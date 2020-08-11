@@ -1,0 +1,107 @@
+#forgot-page {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	background-color: var(--color-background);
+}
+#forgot-page .intro-container {
+	width: 53%;
+	padding: 8rem;
+	background: var(--color-primary);
+}
+#forgot-page .intro-container .background {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: contain;
+	background-image: url('../../assets/images/success-background.svg');
+}
+#forgot-page .intro-container .wrapper {
+	max-width: 435px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+#forgot-page .intro-container .wrapper .description {
+	font-family: 'Poppins';
+	font-size: 3.2rem;
+	color: var(--color-text-in-primary);
+}
+
+.input-container {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	flex-direction: column;
+}
+
+.input-container .header{
+    min-width: 53%;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.input-container form {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    position: relative;
+    width: 352px;
+}
+
+.input-container form label {
+	font-family: 'Poppins';
+	font-size: 36px;
+	font-weight: 600;
+	align-self: flex-start;
+	color: var(--color-text-title);
+    margin-bottom: 16px;
+    line-height: 46px;
+}
+.input-container a{
+	font-family: 'Poppins';
+	font-size: 16px;
+	font-weight: 400;
+	align-self: flex-start;
+	color: var(--color-text-base);
+    margin-bottom: 40px;
+}
+
+
+.input-container .input-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 24px;
+}
+.input-container .input-wrapper input {
+	min-width: 352px;
+	font-family: 'Poppins';
+	font-size: 16px;
+}
+
+.input-container form button[type='submit'] {
+	border: 0;
+	width: 100%;
+	padding: 2rem;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 8px;
+	font-family: 'Archivo';
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* active */
+	color: var(--color-button-text);
+	background-color: var(--color-secondary);
+}
+.input-container form button.disabled {
+	background-color: #dcdce5;
+	color: var(--color-text-complement);
+}
+
